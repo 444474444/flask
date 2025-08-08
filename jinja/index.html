@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>{{data.title}}</title>
+    </head>
+    <body>
+        <hi>hi, {{data.user}} rendering_html</hi>
+
+        {% if data.is_admin%}
+        <p>you are</p>
+        {%else%}
+        <p>you are not</p>
+        {%endlif%}
+
+        <ul>
+            {% for item in items %}
+            <li>{{item}}</li>
+            {%endfor%}
+        </ul>
+    </body>
+
+</html>
